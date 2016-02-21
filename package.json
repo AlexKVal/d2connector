@@ -1,0 +1,35 @@
+{
+  "name": "d2connector",
+  "version": "0.0.1",
+  "description": "connector service to a d2base",
+  "private": true,
+  "bin": {
+    "d2connector": "./bin/d2connector.js"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "bin",
+    "lib"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:alexkval/d2connector.git"
+  },
+  "author": {
+    "name": "Alexander Shemetovsky",
+    "email": "alexkval@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexKVal/release-script/issues"
+  },
+  "homepage": "https://github.com/AlexKVal/release-script#readme",
+  "dependencies": {
+    "odbc": "^1.2.1"
+  },
+  "devDependencies": {},
+}

@@ -1,6 +1,6 @@
-# d2connector
+# webd2-db
 
-WIP: connector service to a d2base.
+WIP: database connection layer for webd2
 
 ## License
-`d2connector` is licensed under the [MIT License](https://github.com/alexkval/d2connector/blob/master/LICENSE).
+It is licensed under the [MIT License](https://github.com/alexkval/webd2-db/blob/master/LICENSE).

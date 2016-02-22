@@ -1,15 +1,11 @@
 {
-  "name": "d2connector",
+  "name": "webd2-db",
   "version": "0.0.1",
-  "description": "connector service to a d2base",
-  "private": true,
-  "bin": {
-    "d2connector": "./bin/d2connector.js"
-  },
+  "description": "database connection layer for webd2",
+  "main": "lib/index.js",
   "files": [
     "LICENSE",
     "README.md",
-    "bin",
     "lib"
   ],
   "scripts": {
@@ -17,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alexkval/d2connector.git"
+    "url": "git@github.com:alexkval/webd2-db.git"
   },
   "author": {
     "name": "Alexander Shemetovsky",
@@ -25,11 +21,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AlexKVal/release-script/issues"
+    "url": "https://github.com/alexkval/webd2-db/issues"
   },
-  "homepage": "https://github.com/AlexKVal/release-script#readme",
+  "homepage": "https://github.com/alexkval/webd2-db#readme",
   "dependencies": {
     "odbc": "^1.2.1"
-  },
-  "devDependencies": {},
+  }
 }

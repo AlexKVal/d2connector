@@ -1,5 +1,5 @@
 import test from 'blue-tape'
-import {DB} from '../lib/db'
+import {DB} from '../src/db'
 
 test('DB.select() select returns rows', (t) => {
   const testOdbcString = 'DSN=D2Main.NET'

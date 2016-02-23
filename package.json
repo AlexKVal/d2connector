@@ -28,9 +28,6 @@
     "url": "https://github.com/alexkval/webd2-db/issues"
   },
   "homepage": "https://github.com/alexkval/webd2-db#readme",
-  "dependencies": {
-    "odbc": "^1.2.1"
-  },
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-eslint": "^5.0.0",

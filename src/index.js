@@ -1,5 +1,10 @@
-function hello (name) {
-  return `Hello, ${name || 'Anonymous'}!`
+import {Database} from 'odbc'
+import {DB} from './db'
+
+function dbConnect (odbcString) {
+  return new DB(new Database(), odbcString) // inject odbc driver
 }
 
-export default hello
+export {
+  dbConnect
+}

@@ -1,5 +1,3 @@
-'use strict'
-
 const db = require('odbc')()
 
 const odbcString = 'DSN=D2Main.NET'

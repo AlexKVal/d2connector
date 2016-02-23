@@ -2,6 +2,8 @@
 
 WIP: database connection layer for webd2
 
+[![Build Status](https://travis-ci.org/AlexKVal/webd2-db.svg?branch=master)](https://travis-ci.org/AlexKVal/webd2-db)
+
 ## TDD
 
 ```

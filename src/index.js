@@ -3,11 +3,11 @@
  * because its building is unnecessary burden for a CI
  * all tests are not dependent on 'odbc'
  */
-import {Database} from 'odbc'
+import {open} from 'odbc'
 import {DB} from './db'
 
 function dbConnect (odbcString) {
-  return new DB(new Database(), odbcString) // inject odbc driver
+  return new DB(open, odbcString) // inject odbc driver
 }
 
 export {

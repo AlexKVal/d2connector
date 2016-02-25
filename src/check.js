@@ -1,6 +1,6 @@
-import {dbConnect} from './index'
+import {getDatabase} from './index'
 
-let db = dbConnect('DSN=D2Main.NET')
+let db = getDatabase('DSN=D2Main.NET')
 
 db
   .select('select PosID from sPOSs')

@@ -6,10 +6,10 @@
 import {open} from 'odbc'
 import {DB} from './db'
 
-function dbConnect (odbcString) {
+function getDatabase (odbcString) {
   return new DB(open, odbcString) // inject odbc driver
 }
 
 export {
-  dbConnect
+  getDatabase
 }

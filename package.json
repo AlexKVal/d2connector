@@ -1,7 +1,7 @@
 {
   "name": "webd2-db",
   "version": "0.0.1",
-  "description": "database connection layer for webd2",
+  "description": "database connection layer for the webd2",
   "main": "lib/index.js",
   "files": [
     "LICENSE",

@@ -1,5 +1,7 @@
-import test from 'blue-tape'
-import {DB} from '../src/db'
+'use strict'
+
+const test = require('blue-tape')
+const DB = require('../lib/db').DB
 
 test('DB.select() select returns rows', (t) => {
   const testOdbcString = 'DSN=D2Main.NET'

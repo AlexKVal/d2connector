@@ -10,10 +10,12 @@
   ],
   "scripts": {
     "lint": "standard",
-    "tests-cmd": "babel-tape-runner tests/**/*-test.js | faucet",
+    "tests-cmd": "tape tests/**/*-test.js | faucet",
     "test": "npm run lint && npm run tests-cmd",
-    "tdd": "nodemon -q -x 'npm run tests-cmd'",
-    "build": "rimraf lib && babel src -d lib"
+    "tdd": "nodemon -q -x 'npm run tests-cmd'"
+  },
+  "engines": {
+    "node": "^4.3.1"
   },
   "repository": {
     "type": "git",
@@ -29,16 +31,11 @@
   },
   "homepage": "https://github.com/alexkval/webd2-db#readme",
   "devDependencies": {
-    "babel-cli": "^6.5.1",
-    "babel-eslint": "^5.0.0",
-    "babel-preset-es2015": "6.5.0",
-    "babel-preset-stage-1": "^6.5.0",
-    "babel-tape-runner": "^2.0.1",
     "blue-tape": "^0.2.0",
     "faucet": "0.0.1",
     "nodemon": "^1.9.0",
-    "rimraf": "^2.5.2",
-    "standard": "^6.0.7"
+    "standard": "^6.0.7",
+    "tape": "^4.4.0"
   },
   "optionalDependencies": {
     "odbc": "1.2.1"

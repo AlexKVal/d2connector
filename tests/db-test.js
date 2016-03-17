@@ -9,7 +9,7 @@ test('DB.select() select returns rows', (t) => {
 
   const openFunctionMock = function openFunctionMock (connectionString, cb) {
     const odbcMock = {
-      closeSync () {
+      close () {
         t.pass()
       },
 

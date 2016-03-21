@@ -3,7 +3,7 @@
 const test = require('blue-tape')
 const DB = require('../lib/db').DB
 
-test('DB.select() select returns rows', (t) => {
+test('DB.exec() of select query returns rows', (t) => {
   const testOdbcString = 'DSN=D2Main.NET'
   const testSql = 'sql * from 1'
 
@@ -23,13 +23,13 @@ test('DB.select() select returns rows', (t) => {
   }
 
   return new DB(openFunctionMock, testOdbcString)
-    .select(testSql)
+    .exec(testSql)
     .then((rows) => {
       t.deepEqual(rows, ['row1', 'row2'])
     })
 })
 
-test('DB.select() returns error with a wrong odbc connection string', (t) => {
+test('DB.exec() returns error with a wrong odbc connection string', (t) => {
   const testOdbcString = 'a wrong string'
 
   const openFunctionMock = function openFunctionMock (connectionString, cb) {
@@ -37,13 +37,13 @@ test('DB.select() returns error with a wrong odbc connection string', (t) => {
   }
 
   return new DB(openFunctionMock, testOdbcString)
-    .select('does not matter')
+    .exec('does not matter')
     .catch((err) => {
       t.equal(err, '[odbc] Error\nodbc> a wrong string')
     })
 })
 
-test('DB.select() returns error with a wrong sql', (t) => {
+test('DB.exec() returns error with a wrong sql', (t) => {
   const testOdbcString = 'DSN=D2Main.NET'
 
   const openFunctionMock = function openFunctionMock (connectionString, cb) {
@@ -55,7 +55,7 @@ test('DB.select() returns error with a wrong sql', (t) => {
   }
 
   return new DB(openFunctionMock, testOdbcString)
-    .select('a wrong sql')
+    .exec('a wrong sql')
     .catch((err) => {
       t.equal(err, '[odbc] Error sql\nsql> a wrong sql')
     })

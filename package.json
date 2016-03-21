@@ -12,6 +12,7 @@
     "lint": "standard",
     "tests-cmd": "tape tests/**/*-test.js | faucet",
     "test": "npm run lint && npm run tests-cmd",
+    "release": "release",
     "tdd": "nodemon -q -x 'npm run tests-cmd'"
   },
   "engines": {
@@ -19,7 +20,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:alexkval/webd2-db.git"
+    "url": "alexkval/webd2-db"
   },
   "author": {
     "name": "Alexander Shemetovsky",
@@ -33,7 +34,9 @@
   "devDependencies": {
     "blue-tape": "^0.2.0",
     "faucet": "0.0.1",
+    "mt-changelog": "^0.6.2",
     "nodemon": "^1.9.0",
+    "release-script": "^1.0.2",
     "standard": "^6.0.7",
     "tape": "^4.4.0"
   },
